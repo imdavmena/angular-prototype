@@ -1,0 +1,30 @@
+<nav class="mt-[76px]">
+  <ul class="relative">
+    <ng-template ngFor let-item [ngForOf]="menuList" let-i="index">
+      <li
+        class="h-auto mb-6 flex flex-col justify-center items-start"
+        [ngClass]="{
+          'active-menu-list': item.active
+        }"
+      >
+        <a href="#" class="flex items-center text-left ml-8">
+          <i class="text-base">{{ item.icon }}</i>
+          <p class="pl-6 text-sm mr-6">{{ item.label }}</p>
+          <span
+            *ngIf="item.notification > 0"
+            class="
+              w-8
+              h-4
+              text-[10px] text-[#F65C5B]
+              bg-[#FCDBD5]
+              text-center
+              rounded-full
+              font-semibold
+            "
+            >+{{ item.notification }}</span
+          >
+        </a>
+      </li>
+    </ng-template>
+  </ul>
+</nav>

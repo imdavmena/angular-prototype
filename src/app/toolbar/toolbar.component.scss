@@ -1,0 +1,29 @@
+.app-space-thead {
+  tr th:first-child {
+    @apply pl-7;
+  }
+
+  tr th:last-child {
+    @apply text-center;
+  }
+}
+
+.app-space-tbody {
+  tr td:first-child {
+    @apply pl-7;
+  }
+
+  tr td:last-child {
+    @apply text-center;
+  }
+}
+
+.app-divide-y-2 {
+  border-top-width: 2px;
+  border-bottom-width: 0px;
+}
+
+.app-divide-y {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}

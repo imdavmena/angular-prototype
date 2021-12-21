@@ -1,0 +1,28 @@
+<ng-template ngFor let-item [ngForOf]="manageDetails" let-i="index">
+  <div
+    class="
+      w-full
+      h-[166px]
+      bg-white
+      inline-flex
+      flex-col
+      justify-center
+      items-end
+      rounded-lg
+      mx-3
+      pr-9
+    "
+  >
+    <p class="text-[#707070] text-right">{{ item.label }}</p>
+    <h2
+      class="text-lg mt-5"
+      [ngClass]="{
+        'day-color-small': item.days >= 5,
+        'day-color-mid': item.days >= 11,
+        'day-color-large': item.days >= 22
+      }"
+    >
+      {{ item.days }}
+    </h2>
+  </div>
+</ng-template>

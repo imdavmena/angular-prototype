@@ -1,0 +1,15 @@
+.day-color-small,
+.day-color-mid,
+.day-color-large {
+  @apply text-5xl;
+}
+
+.day-color-small {
+  @apply text-[#EF4D37];
+}
+.day-color-mid {
+  @apply text-[#F78400];
+}
+.day-color-large {
+  @apply text-[#FAB12D];
+}

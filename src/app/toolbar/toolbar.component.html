@@ -1,0 +1,142 @@
+<section class="flex flex-col justify-center items-start w-full px-16 pt-14">
+  <div class="w-full mx-auto mt-4">
+    <!-- Tabs -->
+    <div class="flex flex-1">
+      <ul id="tabs" class="inline-flex w-full px-1 pt-2">
+        <li
+          class="
+            px-4
+            py-1
+            -mb-px
+            font-semibold
+            text-[#EF4D38]
+            border-b-[6px] border-[#EF4D38]
+            rounded-t
+          "
+        >
+          <a id="default-tab" href="#first">Todos</a>
+        </li>
+        <li class="px-4 py-1 font-semibold text-[#464E61] rounded-t opacity-75">
+          <a href="#second">En ejecución</a>
+        </li>
+        <li class="px-4 py-1 font-semibold text-[#464E61] rounded-t opacity-75">
+          <a href="#third">Cerca de expiración</a>
+        </li>
+        <li class="px-4 py-1 font-semibold text-[#464E61] rounded-t opacity-75">
+          <a href="#fourth">Alertas</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tab Contents -->
+    <div id="tab-contents">
+      <div id="first" class="mt-6">
+        <table
+          class="
+            table-auto
+            w-full
+            bg-white
+            rounded-lg rounded-b-none
+            border-[#EAEAEA]
+          "
+        >
+          <thead class="app-space-thead">
+            <tr class="text-left text-[#092342]">
+              <th class="pt-6 pb-8">Nombre</th>
+              <th class="pt-6 pb-8">Fecha de Creación</th>
+              <th class="pt-6 pb-8">Modificado</th>
+              <th class="pt-6 pb-8">Partes</th>
+              <th class="pt-6 pb-8">Alertas</th>
+              <th class="pt-6 pb-8">Acciones</th>
+            </tr>
+          </thead>
+          <tbody class="app-divide-y-2 app-space-tbody">
+            <tr class="text-left text-[#7C7C7C] app-divide-y-2">
+              <td class="py-7">Contrato proyecto</td>
+              <td class="py-7">16 feb. 2021 23:38</td>
+              <td class="py-7">16 feb. 2021 23:38</td>
+              <td class="py-7">Wepsys, Edesur</td>
+              <td class="py-7">
+                <div
+                  class="
+                    col-start-2
+                    row-start-1 row-end-3
+                    sm:mt-4
+                    lg:mt-0
+                    xl:mt-4
+                  "
+                >
+                  <dd
+                    class="
+                      flex
+                      justify-end
+                      sm:justify-start
+                      lg:justify-end
+                      xl:justify-start
+                      -space-x-1
+                    "
+                  >
+                    <span
+                      class="
+                        w-6
+                        h-6
+                        flex
+                        justify-center
+                        items-center
+                        bg-[#FCE2E5]
+                        text-[#F77F8B] text-xs
+                        rounded-full
+                      "
+                      >03</span
+                    >
+                    <span
+                      class="
+                        w-6
+                        h-6
+                        flex
+                        justify-center
+                        items-center
+                        bg-[#D7FFDB]
+                        text-[#48A36F] text-xs
+                        rounded-full
+                      "
+                      >05</span
+                    >
+                    <span
+                      class="
+                        w-6
+                        h-6
+                        flex
+                        justify-center
+                        items-center
+                        bg-[#F6DEC6]
+                        text-[#F99E27] text-xs
+                        rounded-full
+                      "
+                      >01</span
+                    >
+                  </dd>
+                </div>
+              </td>
+              <td class="py-7">
+                <button class="text-2xl space-x-[1px]">
+                  <span>.</span>
+                  <span>.</span>
+                  <span>.</span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="flex justify-end items-center bg-[#EDEEF4] py-6 px-12">
+          <span class="mr-12 text-[#959697] text-sm">1 - 1 of 1</span>
+          <button class="mr-3 text-[#959697]"><</button>
+          <button class="ml-3 font-semibold">></button>
+        </div>
+      </div>
+      <div id="second" class="hidden p-2">Second tab</div>
+      <div id="third" class="hidden p-2">Third tab</div>
+      <div id="fourth" class="hidden p-2">Fourth tab</div>
+    </div>
+  </div>
+</section>
