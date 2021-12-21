@@ -9,6 +9,7 @@ import { ManagementDetailsCardsComponent } from './management-details-cards/mana
 import { AsideUserdetailComponent } from './aside-userdetail/aside-userdetail.component';
 import { AsideMenuComponent } from './aside-menu/aside-menu.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ToolbarButtonsFilterComponent } from './toolbar-buttons-filter/toolbar-buttons-filter.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     AsideUserdetailComponent,
     AsideMenuComponent,
     ToolbarComponent,
+    ToolbarButtonsFilterComponent,
   ],
   imports: [BrowserModule],
   providers: [],
